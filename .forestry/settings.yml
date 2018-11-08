@@ -1,5 +1,5 @@
 ---
-new_page_extension: html
+new_page_extension: md
 auto_deploy: true
 admin_path: ''
 webhook_url: 
@@ -8,7 +8,7 @@ sections:
   path: content
   label: Pages
   create: all
-  match: "*"
+  match: "*.md"
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
