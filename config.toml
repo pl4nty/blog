@@ -1,6 +1,6 @@
 baseURL = "https://tplant.com.au/"
 languageCode = "en-us"
-title = "Coder Portfolio"
+title = "Thomas Plant"
 theme = "coder-portfolio"
 googleAnalytics = ""
 
@@ -13,7 +13,7 @@ pygmentsUseClasses = true # new add
 
 [params] # theme parameters
     author = "Thomas Plant" # Author's name.
-    info = "Web developer" # Author's job title or info.
+    info = "Backend developer" # Author's job title or info.
     description = "Thomas Plant's developer portfolio" # Site description.
     keywords = "blog,developer,personal,portfolio" # Site keywords.
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
