@@ -1,8 +1,8 @@
 +++
-title = "Contact"
-slug = "contact"
+title = "Résumé"
+slug = "resume"
 thumbnail = "images/tn.png"
-description = "contact"
+description = "My resume"
 +++
 
 ## Want Contact?
