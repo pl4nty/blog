@@ -1,46 +1,71 @@
 baseURL = "https://tplant.com.au/"
 languageCode = "en-us"
-title = "Minimal"
-theme = "minimal"
+title = "Coder Portfolio"
+theme = "coder-portfolio"
 googleAnalytics = ""
 
-[params]
-    author = "Thomas Plant"
-    description = "Developer portfolio powered by Hugo"
-    githubUsername = "Pl4nty"
-    accent = "blue"
-    showBorder = false
-    backgroundColor = "white"
-    font = "Raleway" # should match the name on Google Fonts!
-    highlight = true
-    highlightStyle = "solarized-dark"
-    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+paginate = 20 # Default number of pages per page in pagination.
 
-[[menu.main]]
-    url = "/"
-    name = "Home"
+pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentscodefences = true # Enable code fence background highlighting.
+pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+pygmentsUseClasses = true # new add
+
+[params] # theme parameters
+    author = "Thomas Plant" # Author's name.
+    info = "Web developer" # Author's job title or info.
+    description = "Thomas Plant's developer portfolio" # Site description.
+    keywords = "blog,developer,personal,portfolio" # Site keywords.
+    avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
+
+    footercontent = "Enter a text here." # Add footer content
+    fixedbarContent = "Do you want to know me more private?→" # Add fixedbar content
+    fixedbarContentAfter = "Thank You! Please share it if you like it→" # Add fixedbar content after click
+
+    # Whether you want to hide copyright and credits in the footer.
+    hideCredits = false
+    hideCopyright = false
+
+    # Custom CSS
+    custom_css = []
+
+    # Alignment of Mobile Menu items
+    itemscentered = true
+
+    # RTL support
+    rtl = false
+
+    snsShare = true # new add
+
+    thumbnail = "images/tn.png" # default sns thumbnail
+
+    # Multilanguage mode
+    langseparator = "|" # Separates menus from language selectors when site is multilingual.
+
+# Social links
+[[params.social]]
+    name = "Github"
     weight = 1
-
-[[menu.main]]
-    url = "/post/"
-    name = "Posts"
-    weight = 2
-
-[[menu.main]]
-    url = "/project/"
-    name = "Projects"
-    weight = 3
-
-# Social icons to be shown on the right-hand side of the navigation bar
-# The "name" field should match the name of the icon to be used
-# The list of available icons can be found at http://fontawesome.io/icons/
-
-[[menu.icon]]
-    url = "mailto:contact@tplant.com.au"
-    name = "envelope-o"
-    weight = 1
-
-[[menu.icon]]
     url = "https://github.com/Pl4nty/"
-    name = "github"
+[[params.social]]
+    name = "StackOverflow"
     weight = 2
+    url = "https://stackoverflow.com/users/9412514/thomas-plant"
+[[params.social]]
+    name = "LinkedIn"
+    weight = 3
+    url = "https://www.linkedin.com/in/t-plant/"
+
+# Menu links
+[[menu.main]]
+    name = "Portfolio"
+    weight = 1
+    url  = "portfolio"
+[[menu.main]]
+    name = "Résumé"
+    weight = 2
+    url  = "resume"
+[[menu.main]]
+    name = "Contact"
+    weight = 3
+    url = "contact"
