@@ -1,4 +1,12 @@
-baseURL = "https://tplant.com.au/"
-languageCode = "en-us"
-title = "Thomas Plant"
-theme = "minimal"
+name = "Minimal"
+license = "MIT"
+licenselink = "https://github.com/calintat/minimal/blob/master/LICENSE.md"
+description = "Personal blog theme powered by Hugo"
+homepage = "http://github.com/calintat/minimal/"
+tags = ["blog", "minimal", "personal", "responsive"]
+features = ["responsive"]
+min_version = "0.24.1"
+
+[author]
+  name = "Thomas Plant"
+  homepage = "https://tcplant.com.au/"
