@@ -15,7 +15,7 @@ pygmentsUseClasses = true # new add
     author = "Thomas Plant" # Author's name.
     info = "Backend developer" # Author's job title or info.
     description = "Thomas Plant's developer portfolio" # Site description.
-    keywords = "blog,developer,personal,portfolio" # Site keywords.
+    keywords = "developer,personal,portfolio" # Site keywords.
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
 
     footercontent = "Enter a text here." # Add footer content
