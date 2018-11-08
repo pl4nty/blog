@@ -1,13 +1,12 @@
-baseURL = "http://example.com/"
+baseURL = "http://tplant.com.au/"
 languageCode = "en-us"
 title = "Minimal"
 theme = "minimal"
-disqusShortname = "username" # delete this to disable disqus comments
 googleAnalytics = ""
 
 [params]
-    author = "Calin Tataru"
-    description = "Personal blog theme powered by Hugo"
+    author = "Thomas Plant"
+    description = "Developer portfolio powered by Hugo"
     githubUsername = "#"
     accent = "red"
     showBorder = true
@@ -37,26 +36,11 @@ googleAnalytics = ""
 # The list of available icons can be found at http://fontawesome.io/icons/
 
 [[menu.icon]]
-    url = "mailto:me@example.com"
+    url = "mailto:contact@tplant.com.au"
     name = "envelope-o"
     weight = 1
 
 [[menu.icon]]
-    url = "https://github.com/username/"
+    url = "https://github.com/Pl4nty/"
     name = "github"
     weight = 2
-
-[[menu.icon]]
-    url = "https://twitter.com/username/"
-    name = "twitter"
-    weight = 3
-
-[[menu.icon]]
-    url = "https://www.linkedin.com/in/username/"
-    name = "linkedin"
-    weight = 4
-
-[[menu.icon]]
-    url = "https://www.stackoverflow.com/username/"
-    name = "stack-overflow"
-    weight = 5
