@@ -1,0 +1,4 @@
+baseURL = "https://tplant.com.au/"
+languageCode = "en-us"
+title = "Thomas Plant"
+theme = "minimal"
