@@ -1,4 +1,4 @@
-baseURL = "http://tplant.com.au/"
+baseURL = "https://tplant.com.au/"
 languageCode = "en-us"
 title = "Minimal"
 theme = "minimal"
@@ -7,7 +7,7 @@ googleAnalytics = ""
 [params]
     author = "Thomas Plant"
     description = "Developer portfolio powered by Hugo"
-    githubUsername = "#"
+    githubUsername = "Pl4nty"
     accent = "red"
     showBorder = true
     backgroundColor = "white"
