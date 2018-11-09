@@ -1,57 +1,53 @@
 baseURL = "https://tplant.com.au/"
-languageCode = "en-us"
+languageCode = "en"
 title = "Thomas Plant"
 googleAnalytics = ""
+theme = "hugo-coder"
 
 paginate = 20 # Default number of pages per page in pagination.
+canonifyurls = true
 
-pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
+pygmentsstyle = "bw" # Color-theme or style for syntax highlighting.
 pygmentscodefences = true # Enable code fence background highlighting.
 pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
-pygmentsUseClasses = true # new add
 
 [params] # theme parameters
     author = "Thomas Plant" # Author's name.
     info = "Backend developer" # Author's job title or info.
     description = "Thomas Plant's developer portfolio" # Site description.
     keywords = "developer,personal,portfolio" # Site keywords.
-    avatarurl = "images/avatar.png" # Contain the path of the optional avatar in the static folder.
+    avatarurl = "img/avatar.png" # Contain the path of the optional avatar in the static folder.
 
-    footercontent = "Enter a text here." # Add footer content
-    fixedbarContent = "Do you want to know me more private?→" # Add fixedbar content
-    fixedbarContentAfter = "Thank You! Please share it if you like it→" # Add fixedbar content after click
+	favicon_32 = "/img/favicon-32x32.png"
+    favicon_16 = "/img/favicon-16x16.png"
+
+    footercontent = "" # Add footer content
 
     # Whether you want to hide copyright and credits in the footer.
-    hideCredits = false
+    hideCredits = true
     hideCopyright = false
 
     # Custom CSS
     custom_css = []
 
-    # Alignment of Mobile Menu items
-    itemscentered = true
-
     # RTL support
     rtl = false
-
-    snsShare = true # new add
-
-    thumbnail = "images/tn.png" # default sns thumbnail
-
-    # Multilanguage mode
-    langseparator = "|" # Separates menus from language selectors when site is multilingual.
+    math = false
 
 # Social links
 [[params.social]]
     name = "Github"
+    icon = "fab fa-github fa-2x"
     weight = 1
     url = "https://github.com/Pl4nty/"
 [[params.social]]
     name = "StackOverflow"
+    icon = "fab fa-stack-overflow fa-2x"
     weight = 2
     url = "https://stackoverflow.com/users/9412514/thomas-plant"
 [[params.social]]
     name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
     weight = 3
     url = "https://www.linkedin.com/in/t-plant/"
 
@@ -59,12 +55,12 @@ pygmentsUseClasses = true # new add
 [[menu.main]]
     name = "Portfolio"
     weight = 1
-    url  = "portfolio"
+    url  = "/portfolio/"
 [[menu.main]]
     name = "Résumé"
     weight = 2
-    url  = "resume"
+    url  = "/resume/"
 [[menu.main]]
     name = "Contact"
     weight = 3
-    url = "contact"
+    url = "/contact/"
