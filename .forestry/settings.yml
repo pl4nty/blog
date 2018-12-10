@@ -7,7 +7,6 @@ sections:
 - type: jekyll-posts
   label: Projects
   create: all
-  match: "**/*"
 - type: directory
   path: _posts
   label: Pages
