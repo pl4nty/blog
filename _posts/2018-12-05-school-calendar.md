@@ -17,4 +17,3 @@ button_text: View Demo
 lead_text: A platform-agnostic school timetable.
 
 ---
-test
