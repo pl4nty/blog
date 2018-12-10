@@ -1,0 +1,43 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: "Hello. I'm Thomas Plant."
+email: 'contact@tplant.com.au'
+description: "I'm an amateur web developer interested in business automation.<br>My projects have been used by schools and small businesses to<br>save time and increase efficiently."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tplant.com.au" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ''
+github_username: 'Pl4nty'
+medium_username: 'https://medium.com/toms-tech'
+
+# Build settings
+markdown: kramdown
+# theme: phantom # Uncomment once published to RubyGems
+plugins:
+  - jekyll-paginate
+
+### Phantom settings
+paginate: 10
+footer_text: '© 2018 Thomas Plant'
+admin_name: 'Thomas Plant'
+google_analytics: "UA-130662566-1" # Update with your own tracking ID
+enable_contact: false
+
+#### Phantom Navigation menu
+enable_nav: true
+nav_item:
+  - { url: '/', text: 'Home' }
+  - { url: 'https://medium.com/toms-tech', text: 'Blog' }
+  - { url: '/resume', text: 'Resume' }
