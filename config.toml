@@ -8,7 +8,7 @@ theme = "m10c"
   description = "Infosec undergrad exploring security, identity, cloud and more"
   avatar = "avatar.png"
   menu_item_separator = " - "
-  favicon = "avatar.png"
+  favicon = "avatar.ico"
 
   [[params.social]]
     icon = "github"
