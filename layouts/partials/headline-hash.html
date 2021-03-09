@@ -1,0 +1,4 @@
+<!-- modified from https://github.com/kaushalmodi/hugo-onyx-theme/blob/master/layouts/partials/headline-hash.html -->
+{{ $icon := partial "icon.html" (dict "ctx" .ctx "name" "link") }}
+{{ .content | replaceRE "(<h[2] id=\"([^\"]+)\".+)(</h[2]+>)"
+(print "${1}&nbsp;<a class=\"anchor\" href=\"#${2}\">" $icon "</a> ${3}") | safeHTML }}
