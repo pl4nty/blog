@@ -8,6 +8,8 @@ jobs:
     steps:
     - name: Checkout master
       uses: actions/checkout@v1
+      with:
+        submodules: true
     - name: Check for broken links
       uses: marccampbell/hugo-linkcheck-action@v0.1.3
     - name: Deploy to GitHub Pages
