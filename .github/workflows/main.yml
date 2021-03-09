@@ -11,10 +11,7 @@ jobs:
       with:
         submodules: true
     - name: Deploy to GitHub Pages
-      uses: benmatselby/hugo-deploy-gh-pages@v1.8.0
-      env:
-        TARGET_REPO: pl4nty/pl4nty.github.io
-        HUGO_VERSION: 0.81.0
-        TARGET_BRANCH: master
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        CNAME: tplant.com.au
+      uses: chabad360/hugo-gh-pages@master
+      with:
+        githubToken: ${{ secrets.GITHUB_TOKEN }}
+        cname: tplant.com.au
