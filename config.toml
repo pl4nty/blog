@@ -12,13 +12,13 @@ theme = "m10c"
 
   [[params.social]]
     icon = "github"
-    name = "Github"
+    name = "GitHub"
     url = "https://github.com/pl4nty"
 
   [[params.social]]
-    icon = "twitter"
-    name = "Twitter"
-    url = "https://twitter.com/pl4nty"
+    icon = "linkedin"
+    name = "Linkedin"
+    url = "https://linkedin.com/in/tomplant"
 
 [menu]
   [[menu.main]]
@@ -31,8 +31,17 @@ theme = "m10c"
     name = "Tags"
     url = "/tags/"
     weight = 2
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 3
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "dracula"
+    tabWidth = 4
