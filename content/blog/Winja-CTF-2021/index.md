@@ -3,7 +3,7 @@ title: "Winja CTF 2021"
 date: 2021-03-08
 draft: false
 ---
-
+A hack quest CTF by [nullcon](https://nullcon.net/), good variety of difficulty and categories. Keeping track of the map interface was painful though.
 ## Are Yaar
 ### Points: 120
 > In a village there were 4 best friends one of them was Ramlal whose favorite dish was 'pulihora'. He was a farmer and with lot of hardwork and passion he became CEO of a Software Organization. https://twitter.com/kulkarniramlal
