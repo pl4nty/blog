@@ -22,17 +22,17 @@ The Teams team (haha) are migrating to Fabric UI, but I was new to React so used
 
 Only a few weeks later, unofficial support for large files was added to Teams. It still throws an error when linking to the assessment item, but the file does actually upload to SharePoint. Anyway, it was a fun intro to React, so I can’t complain.
 
-## June Edit
-It was just a prank, MS removed the file upload and even one of the endpoints I was using. Move fast and break things, right guys?
+### June Edit
+It was just a prank, Microsoft removed the file upload and even one of the endpoints I was using. Move fast and break things, right guys?
 
 So I rewrote it as a Teams app with Yeoman, Fabric, and my newly-acquired React skillz.
-While I was away the Fabric migration was finished, so I added progress bars, file type icons, multi-file/cancellable uploads.
+While I was away the Fabric migration was finished, so I added progress bars, file type icons, and multi-file/cancellable uploads.
 
 SSO tokens were recently added too, so I wrote some API middleware to exchange them for access tokens and achieved silent SSO!
 The final touch was a GitHub Action for continuous deployment, written on my own time so [it's open source](https://github.com/pl4nty/teams-deploy-tab).
 
 # Act 2: Printing (Oh, the Horror!)
-So Teams is fine and dandy for digital assessment, but what about those pesky written exams? Time to dive into the world of document management systems. Dozens of vendors threw poorly-made (or non-functioning) products at us, so we decided to create, scan and store written assessment ourselves. Fun!
+So Teams is fine and dandy for digital assessment, but what about those pesky written exams? Time to dive into the world of document management systems. Dozens of vendors threw poorly-made (or non-functioning) products at us, so we decided to create, scan and store written assessment ourselves.
 
 It all started with printing. We went with a manual document generation approach to handle our CRM's CSV output, ending up with a QR-coded Word template. A handy Adobe add-in spat out mail-merged cover pages, that were merged onto exam PDFs with an Adobe Acrobat script. Ugly I know, but the process was quick to develop and supported all the familiar binding and collating options on our Xerox MFPs.
 
@@ -45,5 +45,5 @@ Hopefully Teams will support creating assignments with service accounts soon, so
 # Epilogue
 I hope you enjoyed this glimpse into the education space. Please reach out if you have advice for this amateur developer, or would like me to elaborate on anything. Bye for now!
 
-## 2021 Edit
+### 2021 Edit
 I've since finished working in education, but still have plenty of spicy stories to tell. Maybe they'll grace the pages of this blog some day... For now, I'm going back to the CTF grind. See ya!
