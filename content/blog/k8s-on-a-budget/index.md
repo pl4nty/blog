@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes on a Budget"
-date: 2021-02-14
-draft: false
+date: 2021-04-14
+draft: true
 tags: ["infra", "devops", "microsoft"]
 ---
 # Prologue
@@ -32,14 +32,22 @@ Everyone and their mother provides hosted
 
 https://docs.microsoft.com/en-us/azure/aks/ingress-tls
 
-https://docs.microsoft.com/en-us/azure/aks/kubernetes-action
 
 bruteforcing vm types lmao - most failed, either preprovisioning or during deployment of VM set with 
 standard_a2 3.5gb mem but still works
 
 https://staffordwilliams.com/blog/2020/05/13/optimising-for-cost-in-aks/#the-cheapest-cluster not really tho
 
+CD compatible
 https://docs.github.com/en/actions/guides/publishing-docker-images#publishing-images-to-github-packages
+https://docs.microsoft.com/en-us/azure/aks/kubernetes-action
 
-IoT workloads running
+IoT workloads
 https://k3s.io/
+
+Automatic failover
+https://docs.microsoft.com/en-us/azure/traffic-manager/traffic-manager-metrics-alerts#alerts-on-traffic-manager-metrics
+https://docs.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-metric
+https://docs.microsoft.com/en-us/azure/azure-monitor/alerts/action-groups#automation-runbook
+https://docs.microsoft.com/en-us/azure/aks/start-stop-cluster
+functions require effort and logic apps don't have an aks connector, `az aks stop --name aks-failover1 -g personal-kube-clusters` is so much easier

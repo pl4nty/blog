@@ -1,11 +1,11 @@
 baseURL = "https://tplant.com.au/"
 languageCode = "en-us"
-title = "Tom Plant's blog"
+title = "Tom Plant"
 theme = "m10c"
 
 [params]
   author = "Tom Plant"
-  description = "tl;dr: security, infra, and too much zoomer humour<br><href src='https://en.wikipedia.org/wiki/Stalking'>OSINT me:</href>"
+  description = "security, devops, and too much zoomer humour"
   avatar = "avatar.png"
   menu_item_separator = " - "
   favicon = "avatar.ico"
