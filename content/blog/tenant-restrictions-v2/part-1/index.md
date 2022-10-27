@@ -1,4 +1,3 @@
-# 
 ---
 title: "Finding an unreleased Windows feature - Tenant Restrictions v2 (TRv2)"
 date: 2022-10-27
