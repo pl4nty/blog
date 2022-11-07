@@ -4,7 +4,7 @@ date: 2022-10-27
 draft: false
 tags: ["azure", "rev"]
 ---
-The Windows 11 ADMXs released a while back, and there's an interesting new category - "Tenant Restrictions". It shares a name with an [Azure AD feature](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions) for restricting endpoints to specific tenants, but that typically uses a TLS decryption appliance without any endpoint config. The ADMX category only has one policy, "Cloud Policy Details" (ID `trv2_payload`), but fortunately it has a detailed description:
+The Windows 11 ADMXs released a while back, and there's an interesting new category - "Tenant Restrictions". It shares a name with an [Azure AD feature](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions) for restricting endpoints to specific tenants, but that typically requires a beefy TLS decryption appliance and expensive supporting infrastructure (VPNs etc). The ADMX category only has one policy, "Cloud Policy Details" (ID `trv2_payload`), but fortunately it has a detailed description:
 
 >This setting enables and configures the device-based tenant restrictions feature for Azure Active Directory.
 >
@@ -77,4 +77,6 @@ That `devices` property also looked interesting. After even more OSINT, it leake
 
 The rule supports standard Azure AD [device filters](https://learn.microsoft.com/en-us/azure/active-directory/conditional-access/concept-condition-filters-for-devices#filter-for-devices-graph-api), which could be particularly useful for PAW implementations.
 
-That's about it for implementing this feature, feel free to experiment in your own tenants. In part 2, we'll experiment with Windows binaries to find out how this all works, and hopefully shed some light on the extra WDAC/firewall option.
+That's about it for implementing this feature. When it releases, it will allow security-conscious organisations to take another step forward on their cloud journeys, removing one last dependency on expensive on-premises hardware.
+
+In part 2, we'll experiment with Windows binaries to find out how this all works, and hopefully shed some light on the extra WDAC/firewall option.
