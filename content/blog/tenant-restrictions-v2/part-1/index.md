@@ -37,7 +37,7 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
 ```
 ```json
 {
-	id: "<GUID>",
+    "id": "<GUID>",
     "tenantRestrictions": {
         "devices": null,
         "usersAndGroups": {
