@@ -40,13 +40,13 @@ This time it's a [`DllMain`](https://learn.microsoft.com/en-us/troubleshoot/deve
 
 `HttpPolicyExtensionInit` might be related to the header injection we observed previously. It starts by checking if `cloudidsvc` is running and starting it if needed, then calls `HttpPolicyExtensionInitWinHttp` or `HttpPolicyExtensionInitWinInet` depending on a flag argument. It also sets up a `PluginStateManager`, that will rerun these init functions later via an `OnPolicyChange` event handler. 
 
-![[Pasted image 20221113183037.png]]
+![HTTPPolicyExtensionInit](HTTPPolicyExtensionInit.png)
 
 The init functions are the real core of TRv2. We'll start with `HttpPolicyExtensionInitWinHttp` which sets the `0xa3` [WinHTTP option](https://learn.microsoft.com/en-us/windows/win32/winhttp/option-flags) and registers a `WinHttpGlobalCallback` function. This appears to intercept WinHTTP requests for modification, but the only documentation I could find was an `ERROR_WINHTTP_GLOBAL_CALLBACK_FAILED` definition in `winhttp.h`. Such an API could be extremely powerful, and [`WinHttpSetOption`](https://learn.microsoft.com/en-us/windows/win32/api/winhttp/nf-winhttp-winhttpsetoption) has been [used by malware](https://blog.talosintelligence.com/tinyturla/), so I tried to call it in a test C++ binary.
 
 Unfortunately `dwBufferLength=sizeof(&callback)` of resulted in `ERROR_INSUFFICIENT_BUFFER`. After some trial and error, `dwBufferLength=40` induced a delay of several seconds, then an NT `STATUS_ACCESS_VIOLATION`. Any larger buffers would result in the same `ERROR_INSUFFICIENT_BUFFER`, so I'm really not sure of the root cause here. Given this was my first time writing C++, I hope someone more knowledgable can research this avenue further.
 
-![[Pasted image 20221113183746.png]]
+![WinHttpGlobalCallback](WinHttpGlobalCallback.png)
 
 Digging deeper into `WinHttpGlobalCallback` confirms my suspicions. It's responsible for setting `Sec-Restrict-Tenant-Access-Policy`, and `HttpPolicyExtensionInitWinInet` implements a similar feature for `WinINet` requests via another undocumented `0xbc` [WinINet option](https://learn.microsoft.com/en-us/windows/win32/wininet/option-flags). There's also an `ERROR_INTERNET_GLOBAL_CALLBACK_FAILED` definition in `wininet.h`. Testing it via C++ didn't fare much better than WinHTTP, exhibiting the same strange NT buffer behaviour. I also tried running as SYSTEM or other services via PsExec, and using a sandbox to avoid antivirus issues, but with no success.
 
