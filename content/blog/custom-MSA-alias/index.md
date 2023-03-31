@@ -2,7 +2,7 @@
 title: "Use a custom Outlook.com email address without GoDaddy"
 date: 2021-02-14
 draft: false
-tags: ["microsoft"]
+tags: ["m365"]
 ---
 Unlike Microsoft 365 Business, where adding email domains is "just a few clicks away", Microsoft 365 Personal/Family only supports GoDaddy for both registration and DNS. This is a huge red flag to anyone who’s had the misfortune to use GoDaddy, so here’s my workaround.
 

@@ -2,9 +2,7 @@
 title: "corCTF 2021"
 date: 2021-08-22
 draft: false
-tags: [
-    "CTF"
-]
+tags: ["ctf"]
 ---
 
 A jeopardy CTF ([CTFtime event](https://ctftime.org/event/1364/)) by [Crusaders of Rust](https://ctf.cor.team/). I didn't have much time so focused on the lower-level web chals, but it felt like a solid intermediate to hard CTF with great difficulty and category distribution. Didn't have any OSINT or forensics though :(

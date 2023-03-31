@@ -2,7 +2,7 @@
 title: "Microsoft Teams as an LMS"
 date: 2021-02-14
 draft: false
-tags: ["webdev", "edu", "microsoft"]
+tags: ["webdev", "edu", "m365"]
 ---
 # Prologue
 With Queensland adopting the ATAR assessment system, digital assessment storage was one of many new requirements to tackle. We were lagging behind other schools with no existing LMS, but this was a blessing in disguise - we weren’t locked into a non-compliant vendor.

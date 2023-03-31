@@ -2,7 +2,7 @@
 title: "Winja CTF 2021"
 date: 2021-03-08
 draft: false
-tags: ["CTF"]
+tags: ["ctf"]
 ---
 
 A hack quest CTF by [nullcon](https://nullcon.net/), good variety of difficulty and categories. Keeping track of the map interface was painful though.
