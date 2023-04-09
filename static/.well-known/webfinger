@@ -1,0 +1,22 @@
+{
+  "subject": "acct:pl4nty@aus.social",
+  "aliases": [
+    "https://aus.social/@pl4nty",
+    "https://aus.social/users/pl4nty"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://aus.social/@pl4nty"
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://aus.social/users/pl4nty"
+    },
+    {
+      "rel": "http://ostatus.org/schema/1.0/subscribe",
+      "template": "https://aus.social/authorize_interaction?uri={uri}"
+    }
+  ]
+}
