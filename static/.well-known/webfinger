@@ -9,6 +9,7 @@
       "rel": "http://webfinger.net/rel/profile-page",
       "type": "text/html",
       "href": "https://aus.social/@pl4nty"
+    },
     {
       "rel": "self",
       "type": "application/activity+json",
