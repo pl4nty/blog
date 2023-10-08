@@ -1,0 +1,4 @@
+version: STSv1
+mode: testing
+mx: 329706630.pamx1.hotmail.com
+max_age: 86401
