@@ -2,6 +2,11 @@ languageCode = "en-us"
 title = "Tom Plant"
 theme = "m10c"
 
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "rss"
+
 [params]
   author = "Tom Plant"
   description = "security, devops, and too much zoomer humour"
