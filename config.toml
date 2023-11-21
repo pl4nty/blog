@@ -8,7 +8,7 @@ suffixes = [ "xml" ]
 
 [outputFormats.Atom]
 mediaType = "application/atom"
-baseName = "adom"
+baseName = "atom"
 isPlainText = false
 
 [outputs]
