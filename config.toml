@@ -2,6 +2,18 @@ languageCode = "en-us"
 title = "Tom Plant"
 theme = "m10c"
 
+[mediaTypes]
+[mediaTypes."application/atom"]
+suffixes = [ "xml" ]
+
+[outputFormats.Atom]
+mediaType = "application/atom"
+baseName = "index"
+isPlainText = false
+
+[outputs]
+home = [ "HTML", "Atom" ]
+
 [params]
   author = "Tom Plant"
   description = "security, devops, and too much zoomer humour"
