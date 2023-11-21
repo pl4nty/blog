@@ -2,10 +2,17 @@ languageCode = "en-us"
 title = "Tom Plant"
 theme = "m10c"
 
-[outputFormats]
-[outputFormats.RSS]
-mediatype = "application/rss"
-baseName = "rss"
+[mediaTypes]
+[mediaTypes."application/atom"]
+suffix = "xml"
+
+[outputFormats.Atom]
+mediaType = "application/atom"
+baseName = "index"
+isPlainText = false
+
+[outputs]
+home = [ "HTML", "Atom" ]
 
 [params]
   author = "Tom Plant"
