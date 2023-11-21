@@ -4,7 +4,7 @@ theme = "m10c"
 
 [mediaTypes]
 [mediaTypes."application/atom"]
-suffix = "xml"
+suffixes = [ "xml" ]
 
 [outputFormats.Atom]
 mediaType = "application/atom"
