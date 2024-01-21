@@ -4,7 +4,7 @@ theme = "m10c"
 
 [params]
   author = "Tom Plant"
-  description = "security, devops, and too much zoomer humour"
+  description = "(bre|m)aking clouds, Windows, and fancy keyboards"
   avatar = "avatar.png"
   menu_item_separator = " - "
   favicon = "avatar.ico"
@@ -18,6 +18,11 @@ theme = "m10c"
     icon = "linkedin"
     name = "Linkedin"
     url = "https://linkedin.com/in/tomplant"
+
+  [[params.social]]
+    icon = "cloud"
+    name = "Homelab"
+    url = "https://lab.tplant.com.au"
 
 [menu]
   [[menu.main]]
