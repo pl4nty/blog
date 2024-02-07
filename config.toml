@@ -24,6 +24,11 @@ theme = "m10c"
     name = "Homelab"
     url = "https://lab.tplant.com.au"
 
+  [[params.social]]
+    icon = "check-network-outline"
+    name = "Status"
+    url = "https://status.tplant.com.au"
+
 [menu]
   [[menu.main]]
     identifier = "home"
