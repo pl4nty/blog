@@ -1,5 +1,43 @@
 User-agent: *
 Disallow: /cdn-cgi/
 
-User-agent: GPTBot
+# AI crawlers
+
+# https://platform.openai.com/docs/gptbot
+User-Agent: GPTBot
+Disallow: /
+
+# https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers#google-extended
+User-Agent: Google-Extended
+Disallow: /
+
+# Often used for LLMs
+# https://commoncrawl.org/impact
+User-Agent: CCBot
+Disallow: /
+
+# Undocumented by Anthropic
+# https://darkvisitors.com/agents/anthropic-ai
+User-agent: anthropic-ai
+Disallow: /
+# https://originality.ai/ai-bot-blocking - "Text to Block ALL AI Bots"
+User-agent: Claude-Web
+Disallow: /
+
+# Often used for LLMs
+# https://webz.io/blog/web-data/what-is-the-omgili-bot-and-why-is-it-crawling-your-website/
+User-agent: Omgili
+Disallow: /
+User-agent: Omgilibot
+Disallow: /
+
+# https://developers.facebook.com/docs/sharing/bot/
+User-Agent: FacebookBot
+Disallow: /
+
+# https://darkvisitors.com/agents/bytespider
+# Allegedly do not respect robots.txt
+User-Agent: Bytedance
+Disallow: /
+User-Agent: Bytespider
 Disallow: /
