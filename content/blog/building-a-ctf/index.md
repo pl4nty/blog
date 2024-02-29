@@ -94,6 +94,6 @@ These will be the main infra goals for 2024.
 
 ## Conclusion
 
-Thanks for making it this far! If you're interested in supporting a CTF with incredible real-world impact, hit me up - PECAN+ 2024 is going to be bigger and better than ever. If you're running a CTF, I've love if you checked out my [CTFd automation template](https://github.com/pl4nty/auto-ctfd) and let me know what you think. I also want to thank [Michelle Ellis](https://au.linkedin.com/in/dr-michelle-ellis-4bb72493) and [Paul Haskell-Dowland](https://au.linkedin.com/in/pdowland) for their passion and vision to build PECAN+ over the years, and grow it into such a success.
+Thanks for making it this far! If you're interested in supporting a CTF with incredible real-world impact, hit me up - PECAN+ 2024 is going to be bigger and better than ever. If you're running a CTF, I'd love if you checked out my [CTFd automation template](https://github.com/pl4nty/auto-ctfd) and let me know what you think. I also want to thank [Michelle Ellis](https://au.linkedin.com/in/dr-michelle-ellis-4bb72493) and [Paul Haskell-Dowland](https://au.linkedin.com/in/pdowland) for their passion and vision to build PECAN+ over the years, and grow it into such a success.
 
 That's all I've got for now, see you in 2024 😊
